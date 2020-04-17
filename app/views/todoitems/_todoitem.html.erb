@@ -1,0 +1,2 @@
+<p><%= todoitem.content %></p>
+<%= link_to "Delete", todolist_todoitem_path(@todolist, todoitem.id), method: :delete, data: { confirm: "Are you sure?" } %>
