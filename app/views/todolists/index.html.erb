@@ -1,5 +1,15 @@
+<% @todolists.each do |todolist| %>
+<div class="index_row clearfix">
+  <h2 class="todo_list_title"><%= link_to todolist.title, todolist %></h2>
+  <p class="todo_list_sub_title"><%= todolist.description %></p>
+</div>
+<% end %>
+<div class="links">
+  <%= link_to "New Todo List", new_todolist_path %>
+</div>
 <p id="notice"><%= notice %></p>
 
+<!---
 <h1>Todolists</h1>
 
 <table>
@@ -27,3 +37,4 @@
 <br>
 
 <%= link_to 'New Todolist', new_todolist_path %>
+-->
